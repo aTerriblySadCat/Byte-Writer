@@ -3,6 +3,12 @@ using System.Text.RegularExpressions;
 
 Console.OutputEncoding = Encoding.UTF8;
 
+Console.WriteLine("DISCLAIMER!");
+Console.WriteLine("It is HIGHLY RECOMMENDED to quit the application properly through the application itself instead of closing the window/ending the process.");
+Console.WriteLine("The reason for this is that the editted file is closed properly when the application is closed by itself.");
+Console.WriteLine("Closing the application by closing the window or forcefully ending the process does not guarantee the bytes written are saved to the file.");
+
+Console.WriteLine();
 Console.WriteLine("Please enter the path and name of the file that you'd like to write to:");
 string filePath = Console.ReadLine();
 
